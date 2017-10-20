@@ -1,0 +1,177 @@
+body{
+  background-color: #222;
+}
+
+
+#container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#court{
+  position: absolute;
+  width: 600px;
+  border-bottom: 9px solid #246B47;
+  margin: 180px 100px;
+}
+
+#court:before{
+  content: "";
+  width: 8px;
+  height: 60px;
+  background-color: grey;
+  position: absolute;
+  margin-left: 300px;
+  margin-top: -50px;
+}
+
+
+#ball{
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 80px;
+  background-color: green;
+  -webkit-animation: bounce 2s linear infinite;
+}
+#ball:before{
+  content:"";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #999;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 2px;
+}
+
+@-webkit-keyframes bounce{
+  0%, 100%{
+    margin-top: 80px;
+    margin-left: 90px;
+  }
+  10%{
+    margin-left: 200px;
+    margin-top: 85px;
+  }
+  25%{
+    margin-left: 450px;
+    margin-top: 120px;
+  }
+  30%{
+    margin-left: 550px;
+    margin-top: 170px;
+  }
+  40%{
+    
+    margin-left: 750px;
+    margin-top: 90px;
+  }
+  50%{
+    margin-left: 550px;
+    margin-top: 105px;
+    
+  }
+  60%{
+    margin-left: 350px;
+    margin-top: 125px;
+  }
+  70%{
+    margin-left: 190px;
+    margin-top: 170px;
+  }
+}
+
+.racket{
+  position: absolute;
+  width: 55px;
+  height: 100px;
+  border-radius: ;
+ 
+}
+#left{
+  margin-top: 85px;
+  margin-left: 20px;
+  -webkit-transform: rotateY(0deg);
+  -webkit-animation: hitOne 2s linear infinite;
+}
+#left:before{
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  margin-top: 57px;
+  margin-left: 20px;
+  border-radius: 0 0 20% 20%;
+}
+
+#right{
+  margin-left: 700px;
+  margin-top: 85px;
+  
+  -webkit-animation: hitTwo 2s linear infinite;
+}
+#right:before{
+  position: absolute;
+  width: 15px;
+  height: 30px;
+  margin-top: 57px;
+  margin-left: 20px;
+  border-radius: 0 0 20% 20%;
+}
+
+@-webkit-keyframes hitOne{
+  0%, 100% {
+    -webkit-transform: rotateY(0deg);
+  }
+  5%{
+    -webkit-transform: rotateY(-90deg);
+    
+  }
+}
+
+@-webkit-keyframes hitTwo{
+  0%, 100%{
+    -webkit-transform: rotateY(0deg);
+  }
+  
+  35%{
+    -webkit-transform: rotateY(0deg);
+    
+  }
+  
+  
+  40%{
+    -webkit-transform: rotateY(-90deg);
+   
+  }
+  70%{
+    -webkit-transform: rotateY(0deg);
+    
+  }
+}
+
+a {
+  background-color: #222;
+}
+
+.ic {
+  background-color: #222;
+}
+
+.scores {
+  position: relative;
+  background-color: #222;
+  color: white;
+  top: 100px;
+}
+
+.but {
+  position: relative;
+  top: 200px;
+}
+.scores {
+  position: relative;
+  top: 200px;
+}
+
